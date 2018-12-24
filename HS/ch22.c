@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(void) {
+int sub_22_c(void) {
 	//q22_1_1();
 	q22_2_1();
 	return 0;
