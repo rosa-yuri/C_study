@@ -3,7 +3,7 @@
 int scan(void)
 {
 	int num;
-	printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä:\n");
+	printf("ÃÂ¤Â¼Ã¶Â¸Â¦ Ã€Ã”Â·Ã‚Ã‡ÃÂ¼Â¼Â¿Ã¤:\n");
 	scanf_s("%d \n", &num);
 	return 0;
 
