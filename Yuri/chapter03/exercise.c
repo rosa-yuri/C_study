@@ -22,14 +22,14 @@ int main(void)
 	printf("Q3. insert one number: ");
 	scanf_s("%d", &num1); //
 	result1 = num1 * num1;
-	printf("%d Á¦°öÀÇ °á°ú: %d \n", num1, result1);  //5 Á¦°öÀÇ °á°ú: 25
+	printf("%d ì œê³±ì˜ ê²°ê³¼: %d \n", num1, result1);  //5 ì œê³±ì˜ ê²°ê³¼: 25
 
 	printf("Q4. insert two numbers: ");
 	scanf_s("%d %d", &num1, &num2);
 	result2 = num1 / num2;
 	result3 = num1 % num2; 
-	printf("%d / %d ÀÇ ¸ò = %d \n", num1, num2, result2); //7 / 2 ÀÇ ¸ò = 3
-	printf("%d / %d ÀÇ ³ª¸ÓÁö = %d \n", num1, num2, result3); //7 / 2 ÀÇ ³ª¸ÓÁö = 1
+	printf("%d / %d ì˜ ëª« = %d \n", num1, num2, result2); //7 / 2 ì˜ ëª« = 3
+	printf("%d / %d ì˜ ë‚˜ë¨¸ì§€ = %d \n", num1, num2, result3); //7 / 2 ì˜ ë‚˜ë¨¸ì§€ = 1
 
 	printf("Q5. insert three numbers:");
 	scanf_s("%d %d %d", &num1, &num2, &num3); // 1 2 3
