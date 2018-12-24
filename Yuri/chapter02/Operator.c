@@ -2,25 +2,25 @@
 
 int main(void)
 {
-	int num1, num2;  //num1, num2 º¯¼ö ¼±¾ğ
-	int num3 = 30, num4 = 40; // num3, num4ÀÇ ¼±¾ğ ¹× ÃÊ±âÈ­
+	int num1, num2;  //num1, num2 ë³€ìˆ˜ ì„ ì–¸
+	int num3 = 30, num4 = 40; // num3, num4ì˜ ì„ ì–¸ ë° ì´ˆê¸°í™”
 	
-	// printf("num1: %d, num2: %d \n", num1, num2);   // ÃÊ±âÈ­ µÇÁö ¾ÊÀº Áö¿ªº¯¼ö¸¦ »ç¿ëÇÏ¿© ¿¡·¯¹ß»ı, °ú°Å ¹öÀü°ú ´Ş¸® ³­¼ö¸¦ »ı¼ºÇÏÁö ¾ÊÀ½ 
-	num1 = 10;	// ÃÊ±âÈ­
-	num2 = 20;	// ÃÊ±âÈ­
+	// printf("num1: %d, num2: %d \n", num1, num2);   // ì´ˆê¸°í™” ë˜ì§€ ì•Šì€ ì§€ì—­ë³€ìˆ˜ë¥¼ ì‚¬ìš©í•˜ì—¬ ì—ëŸ¬ë°œìƒ, ê³¼ê±° ë²„ì „ê³¼ ë‹¬ë¦¬ ë‚œìˆ˜ë¥¼ ìƒì„±í•˜ì§€ ì•ŠìŒ 
+	num1 = 10;	// ì´ˆê¸°í™”
+	num2 = 20;	// ì´ˆê¸°í™”
 
 	printf("num1: %d, num2: %d \n", num1, num2);
 	printf("num3: %d, num4: %d \n", num3, num4);
 
-	// ±âº» ¿¬»êÀÚ ¿¬½À
-	num1 = 9, num2 = 2;	 // ÀçÃÊ±âÈ­ÇÒ¶§´Â º¯¼ö¼±¾ğ ÇÏÁö ¾Ê¾Æµµ µÊ
+	// ê¸°ë³¸ ì—°ì‚°ì ì—°ìŠµ
+	num1 = 9, num2 = 2;	 // ì¬ì´ˆê¸°í™”í• ë•ŒëŠ” ë³€ìˆ˜ì„ ì–¸ í•˜ì§€ ì•Šì•„ë„ ë¨
 	printf("%d+%d=%d \n", num1, num2, num1+num2);
 	printf("%d-%d=%d \n", num1, num2, num1-num2);
 	printf("%d*%d=%d \n", num1, num2, num1*num2);
-	printf("%d/%dÀÇ ¸ò =%d \n", num1, num2, num1/num2);
-	printf("%d/%dÀÇ ³ª¸ÓÁö =%d \n", num1, num2, num1%num2);
+	printf("%d/%dì˜ ëª« =%d \n", num1, num2, num1/num2);
+	printf("%d/%dì˜ ë‚˜ë¨¸ì§€ =%d \n", num1, num2, num1%num2);
 
-	// Áõ°¡, °¨¼Ò ¿¬»êÀÚ ¿¬½À
+	// ì¦ê°€, ê°ì†Œ ì—°ì‚°ì ì—°ìŠµ
 	num1 = 12, num2 = 12;
 	printf("num1: %d \n", num1);
 	printf("num1++: %d \n", num1++);
@@ -29,11 +29,11 @@ int main(void)
 	printf("++num2: %d \n", ++num2);
 	printf("num2: %d \n", num2);
 	
-	num3 = 10, num4 = (num3--) + 2; // ÈÄÀ§ °¨¼Ò
+	num3 = 10, num4 = (num3--) + 2; // í›„ìœ„ ê°ì†Œ
 	printf("num3: %d \n", num3);
 	printf("num4: %d \n \n", num4);
 
-	// °ü°è¿¬»êÀÚ Boolean
+	// ê´€ê³„ì—°ì‚°ì Boolean
 	int result1, result2, result3;
 	result1 = (num1 == num2);
 	result2 = (num1 <= num2); 
@@ -42,10 +42,10 @@ int main(void)
 	printf("result2: %d \n", result2);
 	printf("result3: %d \n \n", result3);
 
-	// ³í¸®¿¬»êÀÚ Boolean
-	result1 = (num1 == 13 && num2 == 13); // µÑ´Ù true
-	result2 = (num1 < 12 || num2 ==13); // ÇÏ³ª¸¸ true
-	result3 = (!num1); // ÂüÀÌ¸é false, °ÅÁşÀÌ¸é true
+	// ë…¼ë¦¬ì—°ì‚°ì Boolean
+	result1 = (num1 == 13 && num2 == 13); // ë‘˜ë‹¤ true
+	result2 = (num1 < 12 || num2 ==13); // í•˜ë‚˜ë§Œ true
+	result3 = (!num1); // ì°¸ì´ë©´ false, ê±°ì§“ì´ë©´ true
 	printf("result1: %d \n", result1);
 	printf("result2: %d \n", result2);
 	printf("result3: %d \n \n", result3);
