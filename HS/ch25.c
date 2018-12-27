@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(void) {
+int sub_25_c(void) {
 	//q25_2_1();
 	q25_2_2();
 	return 0;
