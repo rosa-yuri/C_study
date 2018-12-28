@@ -1,13 +1,14 @@
 
 #include <stdio.h>
+#include <windows.h> //system("pause")ì™€ í•¨ê»˜ ì”€=ì½˜ì†”ì°½ ë©ˆì¶”ê¸°
 
-// ¾ç¼ö Á¤¼ö ÇÏ³ª ÀÔ·Â, ±× ¼ö¸¸Å­ "Hello Word!" Ãâ·Â
+// ì–‘ìˆ˜ ì •ìˆ˜ í•˜ë‚˜ ì…ë ¥, ê·¸ ìˆ˜ë§Œí¼ "Hello Word!" ì¶œë ¥
 int q7_1_1(void)
 {
 	int num1;
 	int i = 0;
 
-	printf("¾çÀÇ Á¤¼ö ÇÏ³ª ÀÔ·Â: ");
+	printf("ì–‘ì˜ ì •ìˆ˜ í•˜ë‚˜ ì…ë ¥: ");
 	scanf_s("%d", &num1);
 
 	while (i<num1)
@@ -18,7 +19,7 @@ int q7_1_1(void)
 	return 0;
 }
 
-//¾çÀÇ Á¤¼ö ÇÏ³ª ÀÔ·Â, ±× ¼ö¸¸Å­ 3ÀÇ ¹è¼ö Ãâ·Â
+//ì–‘ì˜ ì •ìˆ˜ í•˜ë‚˜ ì…ë ¥, ê·¸ ìˆ˜ë§Œí¼ 3ì˜ ë°°ìˆ˜ ì¶œë ¥
 int q7_1_2(void)
 {
 	int num1;
@@ -26,49 +27,49 @@ int q7_1_2(void)
 	int i=1;
 	int multy;
 	
-	printf("¾çÀÇ Á¤¼ö ÇÏ³ª ÀÔ·Â: ");
+	printf("ì–‘ì˜ ì •ìˆ˜ í•˜ë‚˜ ì…ë ¥: ");
 	scanf_s("%d", &num1);
-	printf("¸î ¹è¼ö: ");
+	printf("ëª‡ ë°°ìˆ˜: ");
 	scanf_s("%d", &cnt);
 
 	multy = num1 * 3;
 	
 	while (i <= num1)
 	{
-		printf("%dÀÇ %d¹è¼ö: %d \n", num1, i, multy);
+		printf("%dì˜ %dë°°ìˆ˜: %d \n", num1, i, multy);
 		i++;
 	}   		
 	return 0;
 }
 
-// Á¤¼ö ÀÔ·Â, ±× °ªÀ» °è¼ÓÇØ¼­ ´õÇÔ, 0 ÀÔ·Â ½Ã±îÁö °è¼Ó, 0 ÀÔ·Â ½Ã ¸ğµç Á¤¼öÀÇ ÇÕ Ãâ·ÂÇÏ°í Á¾·á 
+// ì •ìˆ˜ ì…ë ¥, ê·¸ ê°’ì„ ê³„ì†í•´ì„œ ë”í•¨, 0 ì…ë ¥ ì‹œê¹Œì§€ ê³„ì†, 0 ì…ë ¥ ì‹œ ëª¨ë“  ì •ìˆ˜ì˜ í•© ì¶œë ¥í•˜ê³  ì¢…ë£Œ 
 int q7_1_3(void)
 {
 	int num1=0;
 	int total=0;
 
-	printf("Á¤¼ö ÀÔ·Â(0ÀÔ·Â ½Ã Á¾·á): ");
+	printf("ì •ìˆ˜ ì…ë ¥(0ì…ë ¥ ì‹œ ì¢…ë£Œ): ");
 	scanf_s("%d", &num1);
 
 	total += num1;
 
 	while (num1!=0)
 	{
-		printf("Á¤¼ö ÀÔ·Â(0ÀÔ·Â ½Ã Á¾·á): ");
+		printf("ì •ìˆ˜ ì…ë ¥(0ì…ë ¥ ì‹œ ì¢…ë£Œ): ");
 		scanf_s("%d", &num1);
 
 		total += num1;
 	}
-	printf("ÇÕ°è: %d \n", total);
+	printf("í•©ê³„: %d \n", total);
 	return 0;
 }
 
-// ÀÔ·Â ¹ŞÀº ¼ıÀÚ¿¡ ÇØ´çÇÏ´Â ±¸±¸´ÜÀ» ¿ª¼øÀ¸·Î Ãâ·Â
+// ì…ë ¥ ë°›ì€ ìˆ«ìì— í•´ë‹¹í•˜ëŠ” êµ¬êµ¬ë‹¨ì„ ì—­ìˆœìœ¼ë¡œ ì¶œë ¥
 int q7_1_4(void)
 {
 	int dan=0, num=9;
 
-	printf ("±¸±¸´Ü ¸î ´Ü? ");
+	printf ("êµ¬êµ¬ë‹¨ ëª‡ ë‹¨? ");
 	scanf_s("%d", &dan);
 
 	while (num > 0)
@@ -80,36 +81,36 @@ int q7_1_4(void)
 }
 
 
-//ÀÔ·Â ¹ŞÀº Á¤¼öÀÇ Æò±ÕÀ» Ãâ·Â. 
-//Á¶°Ç 1)¸î °³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÒ °ÍÀÎÁö ¹¯±â. 
-//Á¶°Ç 2)Æò±Õ °ªÀº ¼Ò¼öÁ¡ ÀÌÇÏ±îÁö °è»êÇØ¼­ Ãâ·Â
+//ì…ë ¥ ë°›ì€ ì •ìˆ˜ì˜ í‰ê· ì„ ì¶œë ¥. 
+//ì¡°ê±´ 1)ëª‡ ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•  ê²ƒì¸ì§€ ë¬»ê¸°. 
+//ì¡°ê±´ 2)í‰ê·  ê°’ì€ ì†Œìˆ˜ì  ì´í•˜ê¹Œì§€ ê³„ì‚°í•´ì„œ ì¶œë ¥
 int q7_1_5(void)
 {
 	int total=0, i=0;
 	int num, input;
 
-	printf("¸î °³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÒ °ÍÀÎ°¡?");
+	printf("ëª‡ ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•  ê²ƒì¸ê°€?");
 	scanf_s("%d", &num);
 
 	while (i++<num)
 	{
-		printf("°è»êÇÒ Á¤¼ö ÀÔ·Â: ");
+		printf("ê³„ì‚°í•  ì •ìˆ˜ ì…ë ¥: ");
 		scanf_s("%d", &input);
 		total += input;
 	}
-	printf("ÀÔ·ÂÇÑ Á¤¼öÀÇ Æò±Õ: %f \n", (double)total/num);
+	printf("ì…ë ¥í•œ ì •ìˆ˜ì˜ í‰ê· : %f \n", (double)total/num);
 	return 0;
 }
 
 
-//p.156 ±¸±¸´Ü ÀüÃ¼ Ãâ·Â
+//p.156 êµ¬êµ¬ë‹¨ ì „ì²´ ì¶œë ¥
 int ggudan(void)
 {
 	int num1=2, num2;
 
 	while (num1 < 10)
 	{
-		printf("%d ´Ü \n", num1);
+		printf("%d ë‹¨ \n", num1);
 		num2 = 1;
 		while (num2 < 10)
 		{
@@ -122,7 +123,7 @@ int ggudan(void)
 }
 
 /*
-<while¹® ÁßÃ¸ ±âº» ±¸Á¶>
+<whileë¬¸ ì¤‘ì²© ê¸°ë³¸ êµ¬ì¡°>
 int piled_sentece(void)
 {
 	int n1 = 0, n2 = 0;
@@ -142,33 +143,35 @@ int piled_sentece(void)
 }
 */
 
-// <while ÁßÃ¸ ½ÃÅ°±â>
-// ÃÑ 5°³ÀÇ Á¤¼ö ÀÔ·Â. ±× ¼öÀÇ ÇÕ Ãâ·Â. 
-// Á¶°Ç: Á¤¼ö´Â ¹İµå½Ã 1ÀÌ»ó, ¸¸¾à 1¹Ì¸¸ÀÇ ¼ö°¡ ÀÔ·ÂµÇ´Â °æ¿ì ÀÔ·ÂÀ¸·Î ÀÎÁ¤ÇÏÁö ¾Ê°í Àç ÀÔ·Â ¿ä±¸. 
-// °á±¹ 1ÀÌ»óÀÇ Á¤¼ö 5°³¸¦ ¸ğµÎ ÀÔ·Â ¹ŞÀ» ¼ö ÀÖµµ·Ï ÇÁ·Î±×·¥ ¿Ï¼ºÇÏ±â.
+//#7-1(p.148~)
+
+// <while ì¤‘ì²© ì‹œí‚¤ê¸°>
+// ì´ 5ê°œì˜ ì •ìˆ˜ ì…ë ¥. ê·¸ ìˆ˜ì˜ í•© ì¶œë ¥. 
+// ì¡°ê±´: ì •ìˆ˜ëŠ” ë°˜ë“œì‹œ 1ì´ìƒ, ë§Œì•½ 1ë¯¸ë§Œì˜ ìˆ˜ê°€ ì…ë ¥ë˜ëŠ” ê²½ìš° ì…ë ¥ìœ¼ë¡œ ì¸ì •í•˜ì§€ ì•Šê³  ì¬ ì…ë ¥ ìš”êµ¬. 
+// ê²°êµ­ 1ì´ìƒì˜ ì •ìˆ˜ 5ê°œë¥¼ ëª¨ë‘ ì…ë ¥ ë°›ì„ ìˆ˜ ìˆë„ë¡ í”„ë¡œê·¸ë¨ ì™„ì„±í•˜ê¸°.
 int q7_2_1(void)
 {
 	int total = 0, repeat = 0, input = 0;
 
-	printf("ÃÑ 5°³ÀÇ Á¤¼ö ÀÔ·Â \n");
+	printf("ì´ 5ê°œì˜ ì •ìˆ˜ ì…ë ¥ \n");
 
 	while (repeat < 5)
 	{
 		while (input <= 0)
 		{
-			printf("0º¸´Ù Å« ¼ö¸¦ ÀÔ·Â(%d¹øÂ°):", repeat + 1);
+			printf("0ë³´ë‹¤ í° ìˆ˜ë¥¼ ì…ë ¥(%dë²ˆì§¸):", repeat + 1);
 			scanf_s("%d", &input);
 		}
 		total += input;
 		input = 0;
 		repeat++;
 	}
-	printf("ÃÑ ÇÕ: %d \n", total);
+	printf("ì´ í•©: %d \n", total);
 	return 0;
 }
-//{Áß¿ä}
-// <while ÁßÃ¸ ½ÃÅ°±â>
-// ÃÑ 5Çà Ãâ·Â, ÇàÀÌ ´õÇØÁú ¶§¸¶´Ù o¹®ÀÚ ¼ö°¡ Áõ°¡.
+//{ì¤‘ìš”}
+// <while ì¤‘ì²© ì‹œí‚¤ê¸°>
+// ì´ 5í–‰ ì¶œë ¥, í–‰ì´ ë”í•´ì§ˆ ë•Œë§ˆë‹¤ oë¬¸ì ìˆ˜ê°€ ì¦ê°€.
 int q7_2_2(void)
 {
 	int num1=0, num2=0;
@@ -187,6 +190,178 @@ int q7_2_2(void)
 	return 0;
 }
 
+//#7-2(p.157~)
+//do~while -> while ë³€ê²½
+int q7_3_1_a(void)
+{
+	int total = 0, num=1;
+
+	while (num != 0)
+	{
+		printf("ì •ìˆ˜ ì…ë ¥(0 to quit): ");
+		scanf_s("%d", &num);
+		total += num;
+	}
+	printf("í•©ê³„: %d \n", total);
+	system("pause");
+	return 0;
+}
+
+int q7_3_1_b(void)
+{
+	int total = 0, num = 0;
+
+	printf("while ì§„ì… ì „-ì •ìˆ˜ ì…ë ¥(0 to quit): ");
+	scanf_s("%d", &num);
+	total += num;
+
+	while (num != 0)
+	{
+		printf("while ì§„ì… í›„-ì •ìˆ˜ ì…ë ¥(0 to quit): ");
+		scanf_s("%d", &num);
+		total += num;
+	}
+	printf("í•©ê³„: %d \n", total);
+	system("pause");
+	return 0;
+}
+
+
+//[do~whileë¬¸]0ì´ìƒ ~ 100ì´í•˜ ëª¨ë“  ì§ìˆ˜ í•©ê³„:
+int q7_3_2(void)
+{
+	int total = 0, num = 0;
+
+	do
+	{
+		total += num;
+		num = 2 + num;
+		printf("0ì´ìƒ ~ 100ì´í•˜ ëª¨ë“  ì§ìˆ˜ : %d \n", num);
+	} while (num <=100);
+
+	printf("0ì´ìƒ ~ 100ì´í•˜ ëª¨ë“  ì§ìˆ˜ í•©ê³„: %d \n", total);
+	system("pause");
+	return 0;
+}
+
+//[do~whileë¬¸]while ë¬¸ ì¤‘ì²© êµ¬êµ¬ë‹¨ -> do~whileë¬¸
+int q7_3_3(void)
+{
+	int cur = 2, is = 0;
+
+	do
+	{
+		is = 1;
+		printf("\n");
+
+		do 
+		{
+			printf("%d X %d = %d \n", cur, is, cur*is);
+			is++;
+		} while (is < 10);
+
+		cur++;
+
+	} while (cur < 10);
+	system("pause");
+
+	return 0;
+}
+
+//[forë¬¸] ì…ë ¥: 2ê°œì˜ ì •ìˆ˜, ì¶œë ¥: ë‘ ì •ìˆ˜ í¬í•¨ ê·¸ ì‚¬ì´ ì¡´ì¬í•˜ëŠ” ì •ìˆ˜ë“¤ì˜ í•©
+int q7_4_1(void)
+{
+	int num1, num2, total;
+
+	printf("num1 ì •ìˆ˜ ì…ë ¥:");
+	scanf_s("%d", &num1);
+
+	printf("num2 ì •ìˆ˜ ì…ë ¥:");
+	scanf_s("%d", &num2);
+
+	for(total=0; num1 <= num2; num1++)
+	{
+		total += num1;
+	}
+	printf("ì •ìˆ˜ë“¤ì˜ ì´í•©: %d \n", total);
+	system("pause");
+
+	return 0;
+}
+
+
+//[forë¬¸] ì…ë ¥: n, ì¶œë ¥: n!
+int q7_4_2(void)
+{
+	int num, start=1, total=1; //num: ë§ˆì§€ë§‰ ê°’, start:ì´ˆê¸°ê°’, i:1ë‚˜ì”© ëŠ˜ì–´ë‚˜ëŠ” ê°’, total:ëª¨ë“  ìˆ˜ì˜ ê³±
+
+	printf("num ì…ë ¥: ");
+	scanf_s("%d", &num);
+
+	for (start = 1; start <= num; start++)
+	{
+		total = total*start;
+	}
+	printf("%d!: %d \n", num, total);
+	system("pause");
+	return 0;
+}
+
+//[forë¬¸] while ì¤‘ì²© êµ¬êµ¬ë‹¨ -> for êµ¬êµ¬ë‹¨(cf.p.156)
+int gugudan_for(void)
+{
+	int cur, is;
+
+	for (cur = 2; cur < 10; cur++)
+	{
+		for (is = 1; is < 10; is++)
+			printf("%d X %d = %d \n", cur, is, cur * is);
+		printf("\n");
+	}
+	system("pause");
+	return 0;
+}
+
+
+//[forë¬¸] while ë‚´ for êµ¬êµ¬ë‹¨ 
+int gugudan_for_in_while(void)
+{
+	int cur=2, is;
+
+	while (cur < 10)
+	{
+		for (is = 1; is < 10; is++)
+			printf("%d X %d = %d \n", cur, is, cur * is);
+		printf("\n");
+
+		cur++;
+	}
+	
+	system("pause");
+
+	return 0;
+}
+
+
+//[forë¬¸] for ë‚´ while êµ¬êµ¬ë‹¨ 
+int gugudan_while_in_for(void)
+{
+	int cur, is=0;
+
+	for (cur = 2; cur < 10; cur++)
+	{
+		is = 1; //{ì¤‘ìš”}
+		while (is < 10)
+		{
+			printf("%d X %d = %d \n", cur, is, cur*is);
+			is++;
+		}
+		printf("\n");
+	}
+	system("pause");
+
+	return 0;
+}
 
 int main(void)
 {
@@ -197,6 +372,15 @@ int main(void)
 	//q7_1_5();
 	//ggudan();
 	//q7_2_1();
-	q7_2_2();
+	//q7_2_2();
+	//q7_3_1_a();
+	//q7_3_1_b();
+	//q7_3_2();
+	//q7_3_3();
+	//q7_4_1();
+	//q7_4_2();
+	//gugudan_for();
+	//gugudan_for_in_while();
+	gugudan_while_in_for();
 	return 0;
 }
